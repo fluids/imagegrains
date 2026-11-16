@@ -12,6 +12,7 @@ Ending Cell 4------------------------------------------
 Executing Cell 5---------------------------------------
 All data paths to process:
 FH
+K1
 
 Ending Cell 5------------------------------------------
 Executing Cell 6---------------------------------------
@@ -19,7 +20,7 @@ Ending Cell 6------------------------------------------
 Executing Cell 7---------------------------------------
 Loading model from /qfs/people/chen200/Computation/Python/work/Mine/SFA/imagegrains/models/IG2_full_set_cp_SAM
 
-Loading model in 2.26 seconds
+Loading model in 13.11 seconds
 
 === Model Information ===
 Model ID: IG2_full_set_cp_SAM
@@ -37,13 +38,21 @@ Executing Cell 10--------------------------------------
 ==================================================================================================================================
 Processing folder: FH
 
-4_P1060348_3.jpg, 1/1, image read time 0.00 seconds, inference time 0.85 seconds....
-FH total image read time: 0.00 seconds, total predict time: 0.85 seconds
+4_P1060348_3.jpg, 1/1, image read time 0.21 seconds, inference time 7.39 seconds....
+FH total image read time: 0.21 seconds, total predict time: 7.39 seconds
 
-Total inference time for 1 folders: 0.88 seconds
+==================================================================================================================================
+Processing folder: K1
 
-/tmp/ipykernel_4646/1224083610.py:120: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+/tmp/ipykernel_1846/1224083610.py:120: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
   sts_all = pd.concat([sts_all, sts_df], ignore_index=True)
+
+K1_C2_385.jpg, 1/2, image read time 0.01 seconds, inference time 1.76 seconds....
+
+K1_C3_0449.jpg, 2/2, image read time 0.01 seconds, inference time 1.63 seconds....
+K1 total image read time: 0.02 seconds, total predict time: 3.39 seconds
+
+Total inference time for 2 folders: 11.17 seconds
 
 Ending Cell 10-----------------------------------------
 Executing Cell 11--------------------------------------
@@ -53,26 +62,42 @@ Executing Cell 12--------------------------------------
 FH: 4_P1060348_3.jpg (1/1)
 4_P1060348_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 
+==================================================================================================================================
+K1: K1_C2_385.jpg (1/2)
+K1_C2_385_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
+K1: K1_C3_0449.jpg (2/2)
+K1_C3_0449_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
 
 Ending Cell 12-----------------------------------------
 Executing Cell 13--------------------------------------
 Ending Cell 13-----------------------------------------
 Executing Cell 14--------------------------------------
-FH: (1/1)
+FH: (1/2)
+
 /qfs/people/chen200/Computation/Python/work/Mine/SFA/imagegrains/demo_data/FH/segments_ig2/FH_summary_bootstrapping_ellipse.csv found, skipping...
+K1: (2/2)
+/qfs/people/chen200/Computation/Python/work/Mine/SFA/imagegrains/demo_data/K1/segments_ig2/K1_summary_bootstrapping_ellipse.csv found, skipping...
 
   Folder          Type                                     Image/Masks  \
 0     FH  segments_ig2  4_P1060348_3_IG2_full_set_cp_SAM_combined_pred   
+1     K1  segments_ig2     K1_C2_385_IG2_full_set_cp_SAM_combined_pred   
+2     K1  segments_ig2    K1_C3_0449_IG2_full_set_cp_SAM_combined_pred   
 
    number of grains   D16 CI D16 (95%)   D50 CI D50 (95%)   D84 CI D84 (95%)  \
 0                88  15.4  [14.2 17.2]  22.1  [19.3 24.1]  37.3  [29.3 51. ]   
+1              1380  13.3  [13.1 13.5]  17.8  [17.2 18.3]  30.0  [28.7 31.8]   
+2              1487  13.4  [13.3 13.7]  17.8  [17.4 18.3]  29.4  [28.  31.4]   
 
     D96   CI D96 (95%) unit    axis         method grain approximation  
 0  68.0  [ 50.4 105.8]   px  b-axis  bootstrapping             ellipse  
+1  58.9    [52.5 68.5]   px  b-axis  bootstrapping             ellipse  
+2  57.7    [50.8 66.4]   px  b-axis  bootstrapping             ellipse  
 Ending Cell 14-----------------------------------------
 Executing Cell 15--------------------------------------
-Total time for prediction: 0.88 seconds
-Total time for full workflow: 3.45 seconds
+Total time for prediction: 11.17 seconds
+Total time for full workflow: 24.76 seconds
 
 Ending Cell 15-----------------------------------------
 [IPKernelApp] ERROR | KeyboardInterrupt caught in kernel.

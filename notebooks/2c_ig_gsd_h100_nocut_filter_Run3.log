@@ -31,7 +31,7 @@ Ending Cell 6------------------------------------------
 Executing Cell 7---------------------------------------
 Loading model from /qfs/people/chen200/Computation/Python/work/Mine/SFA/imagegrains/models/IG2_full_set_cp_SAM
 
-Loading model in 2.40 seconds
+Loading model in 2.30 seconds
 
 === Model Information ===
 Model ID: IG2_full_set_cp_SAM
@@ -52,14 +52,14 @@ Processing folder: 20250916_DetertM2012_FieldValidateBaseGrain
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:09,  9.10s/image]
-1image [00:09,  9.10s/image]
+1image [00:08,  8.82s/image]
+1image [00:08,  8.82s/image]
 
-/tmp/ipykernel_7084/3218484821.py:120: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+/tmp/ipykernel_5118/3218484821.py:120: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
   sts_all = pd.concat([sts_all, sts_df], ignore_index=True)
 
-BASEGRAIN2p2georef1775x1989.jpg, 1/1, image read time 0.05 seconds, inference time 14.07 seconds....
-20250916_DetertM2012_FieldValidateBaseGrain total image read time: 0.05 seconds, total predict time: 14.07 seconds
+BASEGRAIN2p2georef1775x1989.jpg, 1/1, image read time 0.05 seconds, inference time 13.51 seconds....
+20250916_DetertM2012_FieldValidateBaseGrain total image read time: 0.05 seconds, total predict time: 13.51 seconds
 
 ==================================================================================================================================
 Processing folder: 20250916_MairD2024_FieldValidateMair2024K1
@@ -67,12 +67,12 @@ Processing folder: 20250916_MairD2024_FieldValidateMair2024K1
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:06,  6.44s/image]
-1image [00:06,  6.44s/image]
+1image [00:05,  5.79s/image]
+1image [00:05,  5.79s/image]
 
 
-K1.jpg, 1/1, image read time 0.04 seconds, inference time 8.93 seconds....
-20250916_MairD2024_FieldValidateMair2024K1 total image read time: 0.04 seconds, total predict time: 8.93 seconds
+K1.jpg, 1/1, image read time 0.04 seconds, inference time 8.18 seconds....
+20250916_MairD2024_FieldValidateMair2024K1 total image read time: 0.04 seconds, total predict time: 8.18 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_APF2
@@ -80,17 +80,17 @@ Processing folder: 20260430_MairD2026IG2_APF2
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.30image/s]
-1image [00:00,  2.29image/s]
+1image [00:00,  2.34image/s]
+1image [00:00,  2.34image/s]
 
 
-DS8-S2_3.jpg, 1/10, image read time 0.01 seconds, inference time 1.11 seconds....
+DS8-S2_3.jpg, 1/10, image read time 0.01 seconds, inference time 1.07 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  3.45image/s]
-1image [00:00,  3.43image/s]
+1image [00:00,  3.36image/s]
+1image [00:00,  3.34image/s]
 
 
 GU_bar7_0.jpg, 2/10, image read time 0.01 seconds, inference time 0.78 seconds....
@@ -98,47 +98,65 @@ GU_bar7_0.jpg, 2/10, image read time 0.01 seconds, inference time 0.78 seconds..
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.07image/s]
-1image [00:00,  2.06image/s]
+1image [00:00,  2.32image/s]
+1image [00:00,  2.31image/s]
 
 
-K1_2_C1_DJI_0385_clipped_4.jpg, 3/10, image read time 0.01 seconds, inference time 1.07 seconds....
+K1_2_C1_DJI_0385_clipped_4.jpg, 3/10, image read time 0.01 seconds, inference time 0.99 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.31image/s]
-1image [00:00,  2.31image/s]
+1image [00:00,  2.36image/s]
+1image [00:00,  2.35image/s]
 
 
-L2_1_C1_DJI_0371_3.jpg, 4/10, image read time 0.01 seconds, inference time 1.01 seconds....
+L2_1_C1_DJI_0371_3.jpg, 4/10, image read time 0.01 seconds, inference time 0.95 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.93image/s]
+1image [00:00,  3.46image/s]
+1image [00:00,  3.45image/s]
+
+
+S9_5_C1_DJI_0102_2.jpg, 5/10, image read time 0.01 seconds, inference time 0.80 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  2.56image/s]
+1image [00:00,  2.55image/s]
+
+
+S9_6_C1_DJI_0677_2.jpg, 6/10, image read time 0.01 seconds, inference time 0.94 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  3.23image/s]
+1image [00:00,  3.22image/s]
+
+
+Simme_1633_2.jpg, 7/10, image read time 0.01 seconds, inference time 0.99 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  2.63image/s]
+1image [00:00,  2.62image/s]
+
+
+deer_creek_004_0.jpg, 8/10, image read time 0.01 seconds, inference time 0.90 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  2.96image/s]
 1image [00:00,  2.92image/s]
 
 
-S9_5_C1_DJI_0102_2.jpg, 5/10, image read time 0.01 seconds, inference time 0.86 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  2.55image/s]
-1image [00:00,  2.54image/s]
-
-
-S9_6_C1_DJI_0677_2.jpg, 6/10, image read time 0.01 seconds, inference time 0.96 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  3.36image/s]
-1image [00:00,  3.30image/s]
-
-
-Simme_1633_2.jpg, 7/10, image read time 0.01 seconds, inference time 1.02 seconds....
+hiddencreek_003_3.jpg, 9/10, image read time 0.01 seconds, inference time 0.93 seconds....
 
 Combining predictions for 1 images:
 
@@ -147,26 +165,8 @@ Combining predictions for 1 images:
 1image [00:00,  2.43image/s]
 
 
-deer_creek_004_0.jpg, 8/10, image read time 0.01 seconds, inference time 0.94 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  2.73image/s]
-1image [00:00,  2.72image/s]
-
-
-hiddencreek_003_3.jpg, 9/10, image read time 0.01 seconds, inference time 0.97 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  2.19image/s]
-1image [00:00,  2.18image/s]
-
-
-kanakacreek_020_4.jpg, 10/10, image read time 0.01 seconds, inference time 1.13 seconds....
-20260430_MairD2026IG2_APF2 total image read time: 0.11 seconds, total predict time: 9.83 seconds
+kanakacreek_020_4.jpg, 10/10, image read time 0.01 seconds, inference time 1.04 seconds....
+20260430_MairD2026IG2_APF2 total image read time: 0.10 seconds, total predict time: 9.40 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_AR
@@ -174,30 +174,30 @@ Processing folder: 20260430_MairD2026IG2_AR
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  3.62image/s]
-1image [00:00,  3.61image/s]
+1image [00:00,  3.29image/s]
+1image [00:00,  3.28image/s]
 
 
-DJI_0039_1_1.jpg, 1/3, image read time 0.01 seconds, inference time 0.86 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  3.01image/s]
-1image [00:00,  3.00image/s]
-
-
-DJI_0536_1_4.jpg, 2/3, image read time 0.01 seconds, inference time 0.82 seconds....
+DJI_0039_1_1.jpg, 1/3, image read time 0.01 seconds, inference time 0.87 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.44image/s]
-1image [00:00,  2.43image/s]
+1image [00:00,  3.24image/s]
+1image [00:00,  3.23image/s]
 
 
-DSC_0577_1.jpg, 3/3, image read time 0.01 seconds, inference time 0.98 seconds....
-20260430_MairD2026IG2_AR total image read time: 0.04 seconds, total predict time: 2.67 seconds
+DJI_0536_1_4.jpg, 2/3, image read time 0.01 seconds, inference time 0.79 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  2.52image/s]
+1image [00:00,  2.51image/s]
+
+
+DSC_0577_1.jpg, 3/3, image read time 0.01 seconds, inference time 0.97 seconds....
+20260430_MairD2026IG2_AR total image read time: 0.03 seconds, total predict time: 2.63 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_FH2
@@ -205,12 +205,12 @@ Processing folder: 20260430_MairD2026IG2_FH2
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.62image/s]
-1image [00:00,  2.61image/s]
+1image [00:00,  2.79image/s]
+1image [00:00,  2.78image/s]
 
 
-4_P1060348_3.jpg, 1/1, image read time 0.01 seconds, inference time 0.93 seconds....
-20260430_MairD2026IG2_FH2 total image read time: 0.01 seconds, total predict time: 0.93 seconds
+4_P1060348_3.jpg, 1/1, image read time 0.01 seconds, inference time 0.86 seconds....
+20260430_MairD2026IG2_FH2 total image read time: 0.01 seconds, total predict time: 0.86 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_HP
@@ -218,12 +218,12 @@ Processing folder: 20260430_MairD2026IG2_HP
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:09,  9.94s/image]
-1image [00:09,  9.94s/image]
+1image [00:09,  9.91s/image]
+1image [00:09,  9.92s/image]
 
 
-CREF_2_T1.jpg, 1/1, image read time 0.14 seconds, inference time 20.06 seconds....
-20260430_MairD2026IG2_HP total image read time: 0.14 seconds, total predict time: 20.06 seconds
+CREF_2_T1.jpg, 1/1, image read time 0.12 seconds, inference time 20.03 seconds....
+20260430_MairD2026IG2_HP total image read time: 0.12 seconds, total predict time: 20.03 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_JF
@@ -231,10 +231,10 @@ Processing folder: 20260430_MairD2026IG2_JF
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  7.52image/s]
-1image [00:00,  7.45image/s]
-T1_Q2_0__2.jpg, 1/1, image read time 0.01 seconds, inference time 0.54 seconds....
-20260430_MairD2026IG2_JF total image read time: 0.01 seconds, total predict time: 0.54 seconds
+1image [00:00,  8.16image/s]
+1image [00:00,  8.07image/s]
+T1_Q2_0__2.jpg, 1/1, image read time 0.01 seconds, inference time 0.48 seconds....
+20260430_MairD2026IG2_JF total image read time: 0.01 seconds, total predict time: 0.48 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_NB2
@@ -244,67 +244,67 @@ Processing folder: 20260430_MairD2026IG2_NB2
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  8.73image/s]
-1image [00:00,  8.64image/s]
+1image [00:00,  9.36image/s]
+1image [00:00,  9.25image/s]
 Could not combine preds for P5220768_2_cut due to an empty prediction! Using grains from one inferrence only.
-P5220768_2_cut.jpg, 1/7, image read time 0.01 seconds, inference time 0.41 seconds....
+P5220768_2_cut.jpg, 1/7, image read time 0.01 seconds, inference time 0.39 seconds....
 
 
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  4.63image/s]
-1image [00:00,  4.60image/s]
-
-
-P5220899_1.jpg, 2/7, image read time 0.01 seconds, inference time 0.65 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  1.34image/s]
-1image [00:00,  1.33image/s]
-
-
-P5240929_Crop_3.jpg, 3/7, image read time 0.03 seconds, inference time 2.05 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  5.50image/s]
-1image [00:00,  5.46image/s]
-P5240982_1.jpg, 4/7, image read time 0.01 seconds, inference time 0.62 seconds....
+1image [00:00,  5.48image/s]
+1image [00:00,  5.44image/s]
+P5220899_1.jpg, 2/7, image read time 0.01 seconds, inference time 0.58 seconds....
 
 
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.21image/s]
-1image [00:00,  2.21image/s]
+1image [00:00,  1.31image/s]
+1image [00:00,  1.31image/s]
 
 
-P5251741_Crop2.jpg, 5/7, image read time 0.01 seconds, inference time 1.09 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  4.60image/s]
-1image [00:00,  4.57image/s]
-
-
-P5252021_1.jpg, 6/7, image read time 0.01 seconds, inference time 0.64 seconds....
+P5240929_Crop_3.jpg, 3/7, image read time 0.03 seconds, inference time 2.02 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:01,  1.18s/image]
-1image [00:01,  1.18s/image]
+1image [00:00,  5.60image/s]
+1image [00:00,  5.56image/s]
+P5240982_1.jpg, 4/7, image read time 0.01 seconds, inference time 0.61 seconds....
 
 
-P5262238_1.jpg, 7/7, image read time 0.02 seconds, inference time 3.00 seconds....
-20260430_MairD2026IG2_NB2 total image read time: 0.11 seconds, total predict time: 8.45 seconds
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  2.48image/s]
+1image [00:00,  2.47image/s]
+
+
+P5251741_Crop2.jpg, 5/7, image read time 0.01 seconds, inference time 1.02 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  4.81image/s]
+1image [00:00,  4.78image/s]
+
+
+P5252021_1.jpg, 6/7, image read time 0.01 seconds, inference time 0.61 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:01,  1.17s/image]
+1image [00:01,  1.17s/image]
+
+
+P5262238_1.jpg, 7/7, image read time 0.02 seconds, inference time 2.98 seconds....
+20260430_MairD2026IG2_NB2 total image read time: 0.10 seconds, total predict time: 8.21 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_NZ1
@@ -312,21 +312,21 @@ Processing folder: 20260430_MairD2026IG2_NZ1
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.94image/s]
-1image [00:00,  2.93image/s]
+1image [00:00,  3.10image/s]
+1image [00:00,  3.09image/s]
 
 
-Outcrop_KRS_22_37_0_48_IMG_6617_cropped_5.jpg, 1/2, image read time 0.01 seconds, inference time 0.90 seconds....
+Outcrop_KRS_22_37_0_48_IMG_6617_cropped_5.jpg, 1/2, image read time 0.01 seconds, inference time 0.86 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:01,  1.72s/image]
-1image [00:01,  1.72s/image]
+1image [00:01,  1.67s/image]
+1image [00:01,  1.67s/image]
 
 
-Outcrop_KRS_22_47_18_40_IMG_6628_cropped_1.jpg, 2/2, image read time 0.02 seconds, inference time 2.95 seconds....
-20260430_MairD2026IG2_NZ1 total image read time: 0.03 seconds, total predict time: 3.85 seconds
+Outcrop_KRS_22_47_18_40_IMG_6628_cropped_1.jpg, 2/2, image read time 0.02 seconds, inference time 2.88 seconds....
+20260430_MairD2026IG2_NZ1 total image read time: 0.03 seconds, total predict time: 3.74 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_NZ2
@@ -334,29 +334,29 @@ Processing folder: 20260430_MairD2026IG2_NZ2
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:01,  1.11s/image]
-1image [00:01,  1.11s/image]
+1image [00:01,  1.05s/image]
+1image [00:01,  1.05s/image]
 
 
-Stream_sediment_HUR_22_1_20221209_092754_cropped_0_1.jpg, 1/4, image read time 0.02 seconds, inference time 2.96 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:01,  1.35s/image]
-1image [00:01,  1.35s/image]
-
-
-Stream_sediment_HUR_22_1_20221209_092758_cropped_3__add1.jpg, 2/4, image read time 0.02 seconds, inference time 3.37 seconds....
+Stream_sediment_HUR_22_1_20221209_092754_cropped_0_1.jpg, 1/4, image read time 0.02 seconds, inference time 2.89 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:02,  2.24s/image]
-1image [00:02,  2.25s/image]
+1image [00:01,  1.34s/image]
+1image [00:01,  1.34s/image]
 
 
-Stream_sediment_HUR_22_1_20221209_092807_cropped_0_4.jpg, 3/4, image read time 0.03 seconds, inference time 6.77 seconds....
+Stream_sediment_HUR_22_1_20221209_092758_cropped_3__add1.jpg, 2/4, image read time 0.02 seconds, inference time 3.34 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:02,  2.41s/image]
+1image [00:02,  2.42s/image]
+
+
+Stream_sediment_HUR_22_1_20221209_092807_cropped_0_4.jpg, 3/4, image read time 0.03 seconds, inference time 6.96 seconds....
 
 Combining predictions for 1 images:
 
@@ -366,7 +366,7 @@ Combining predictions for 1 images:
 
 
 Stream_sediment_KRS_21_48_4_P1030803_cropped__add1.jpg, 4/4, image read time 0.02 seconds, inference time 3.31 seconds....
-20260430_MairD2026IG2_NZ2 total image read time: 0.09 seconds, total predict time: 16.41 seconds
+20260430_MairD2026IG2_NZ2 total image read time: 0.09 seconds, total predict time: 16.49 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_PR
@@ -374,21 +374,21 @@ Processing folder: 20260430_MairD2026IG2_PR
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:01,  1.70s/image]
-1image [00:01,  1.71s/image]
+1image [00:01,  1.68s/image]
+1image [00:01,  1.69s/image]
 
 
-IMG_0167_0.jpg, 1/2, image read time 0.02 seconds, inference time 3.49 seconds....
+IMG_0167_0.jpg, 1/2, image read time 0.02 seconds, inference time 3.46 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:01,  1.61s/image]
-1image [00:01,  1.61s/image]
+1image [00:01,  1.54s/image]
+1image [00:01,  1.55s/image]
 
 
-IMG_0239_0.jpg, 2/2, image read time 0.02 seconds, inference time 3.58 seconds....
-20260430_MairD2026IG2_PR total image read time: 0.04 seconds, total predict time: 7.07 seconds
+IMG_0239_0.jpg, 2/2, image read time 0.02 seconds, inference time 3.50 seconds....
+20260430_MairD2026IG2_PR total image read time: 0.04 seconds, total predict time: 6.96 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_MairD2026IG2_S12
@@ -396,39 +396,39 @@ Processing folder: 20260430_MairD2026IG2_S12
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.20image/s]
-1image [00:00,  2.20image/s]
+1image [00:00,  2.12image/s]
+1image [00:00,  2.11image/s]
 
 
-S1_a_DJI_0003_2_0.jpg, 1/4, image read time 0.01 seconds, inference time 1.05 seconds....
+S1_a_DJI_0003_2_0.jpg, 1/4, image read time 0.01 seconds, inference time 1.06 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.14image/s]
+1image [00:00,  2.21image/s]
+1image [00:00,  2.20image/s]
+
+
+S1_g_DJI_0171_2_0.jpg, 2/4, image read time 0.01 seconds, inference time 1.05 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:00,  2.13image/s]
 1image [00:00,  2.13image/s]
 
 
-S1_g_DJI_0171_2_0.jpg, 2/4, image read time 0.01 seconds, inference time 1.12 seconds....
+S1_g_DJI_0171_2_3.jpg, 3/4, image read time 0.01 seconds, inference time 1.12 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:00,  2.11image/s]
-1image [00:00,  2.10image/s]
+1image [00:00,  1.94image/s]
+1image [00:00,  1.93image/s]
 
 
-S1_g_DJI_0171_2_3.jpg, 3/4, image read time 0.01 seconds, inference time 1.13 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:00,  1.81image/s]
-1image [00:00,  1.80image/s]
-
-
-S1_g_DJI_0208_2_6.jpg, 4/4, image read time 0.01 seconds, inference time 1.12 seconds....
-20260430_MairD2026IG2_S12 total image read time: 0.04 seconds, total predict time: 4.42 seconds
+S1_g_DJI_0208_2_6.jpg, 4/4, image read time 0.01 seconds, inference time 1.07 seconds....
+20260430_MairD2026IG2_S12 total image read time: 0.04 seconds, total predict time: 4.31 seconds
 
 ==================================================================================================================================
 Processing folder: 20260430_YC_YRBCRBWAUSA
@@ -436,174 +436,174 @@ Processing folder: 20260430_YC_YRBCRBWAUSA
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:22, 22.67s/image]
-1image [00:22, 22.68s/image]
+1image [00:24, 24.46s/image]
+1image [00:24, 24.47s/image]
 
 
-DJI_0113_240.png, 1/19, image read time 1.09 seconds, inference time 38.07 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:24, 24.41s/image]
-1image [00:24, 24.42s/image]
-
-
-DJI_0113_720.png, 2/19, image read time 1.07 seconds, inference time 42.60 seconds....
+DJI_0113_240.png, 1/19, image read time 1.12 seconds, inference time 39.76 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:10, 10.03s/image]
-1image [00:10, 10.03s/image]
+1image [00:22, 22.65s/image]
+1image [00:22, 22.66s/image]
 
 
-DJI_0113_1080.png, 3/19, image read time 2.10 seconds, inference time 25.33 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:21, 21.88s/image]
-1image [00:21, 21.88s/image]
-
-
-DJI_0113_1200.png, 4/19, image read time 1.17 seconds, inference time 44.13 seconds....
+DJI_0113_720.png, 2/19, image read time 1.10 seconds, inference time 40.88 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:19, 19.58s/image]
-1image [00:19, 19.58s/image]
+1image [00:09,  9.24s/image]
+1image [00:09,  9.25s/image]
 
 
-DJI_0113_2160.png, 5/19, image read time 1.04 seconds, inference time 40.20 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:54, 54.38s/image]
-1image [00:54, 54.39s/image]
-
-
-DJI_0113_3240.png, 6/19, image read time 1.92 seconds, inference time 70.40 seconds....
+DJI_0113_1080.png, 3/19, image read time 1.00 seconds, inference time 24.54 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:28, 28.04s/image]
-1image [00:28, 28.05s/image]
+1image [00:20, 20.18s/image]
+1image [00:20, 20.18s/image]
 
 
-DJI_0113_4200.png, 7/19, image read time 1.23 seconds, inference time 45.61 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:10, 10.58s/image]
-1image [00:10, 10.58s/image]
-
-
-DJI_0113_4440.png, 8/19, image read time 1.04 seconds, inference time 26.79 seconds....
+DJI_0113_1200.png, 4/19, image read time 1.11 seconds, inference time 42.43 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:13, 13.46s/image]
-1image [00:13, 13.46s/image]
+1image [00:17, 18.00s/image]
+1image [00:17, 18.00s/image]
 
 
-DJI_0113_4680.png, 9/19, image read time 1.33 seconds, inference time 30.51 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:13, 13.03s/image]
-1image [00:13, 13.03s/image]
-
-
-IMG_0830.JPG, 10/19, image read time 0.79 seconds, inference time 37.43 seconds....
+DJI_0113_2160.png, 5/19, image read time 1.00 seconds, inference time 38.64 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:03,  3.33s/image]
-1image [00:03,  3.33s/image]
+1image [00:54, 54.92s/image]
+1image [00:54, 54.93s/image]
 
 
-IMG_1389.JPG, 11/19, image read time 0.11 seconds, inference time 6.01 seconds....
+DJI_0113_3240.png, 6/19, image read time 1.29 seconds, inference time 70.85 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:07,  7.97s/image]
+1image [00:26, 26.66s/image]
+1image [00:26, 26.67s/image]
+
+
+DJI_0113_4200.png, 7/19, image read time 1.57 seconds, inference time 44.24 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:09,  9.60s/image]
+1image [00:09,  9.61s/image]
+
+
+DJI_0113_4440.png, 8/19, image read time 0.98 seconds, inference time 25.84 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:13, 13.35s/image]
+1image [00:13, 13.35s/image]
+
+
+DJI_0113_4680.png, 9/19, image read time 1.63 seconds, inference time 30.65 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:13, 13.22s/image]
+1image [00:13, 13.23s/image]
+
+
+IMG_0830.JPG, 10/19, image read time 1.16 seconds, inference time 37.58 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:03,  3.39s/image]
+1image [00:03,  3.39s/image]
+
+
+IMG_1389.JPG, 11/19, image read time 0.05 seconds, inference time 6.12 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:07,  7.66s/image]
+1image [00:07,  7.66s/image]
+
+
+IMG_3016_1.JPG, 12/19, image read time 0.16 seconds, inference time 22.65 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:07,  7.98s/image]
 1image [00:07,  7.98s/image]
 
 
-IMG_3016_1.JPG, 12/19, image read time 0.16 seconds, inference time 22.96 seconds....
+IMG_3021_1.JPG, 13/19, image read time 0.15 seconds, inference time 20.20 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:08,  8.15s/image]
-1image [00:08,  8.16s/image]
+1image [00:10, 10.02s/image]
+1image [00:10, 10.03s/image]
 
 
-IMG_3021_1.JPG, 13/19, image read time 0.15 seconds, inference time 20.38 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:09,  9.97s/image]
-1image [00:09,  9.97s/image]
-
-
-SSS_C21_20220727_16.jpg, 14/19, image read time 0.19 seconds, inference time 23.82 seconds....
+SSS_C21_20220727_16.jpg, 14/19, image read time 0.20 seconds, inference time 23.79 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:08,  8.83s/image]
-1image [00:08,  8.84s/image]
+1image [00:09,  9.24s/image]
+1image [00:09,  9.24s/image]
 
 
-SSS_S01_20220727_53.jpg, 15/19, image read time 0.30 seconds, inference time 18.37 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [01:24, 84.28s/image]
-1image [01:24, 84.29s/image]
-
-
-SSS_S02_20220727_9.jpg, 16/19, image read time 0.37 seconds, inference time 99.82 seconds....
+SSS_S01_20220727_53.jpg, 15/19, image read time 0.16 seconds, inference time 18.76 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:03,  3.75s/image]
-1image [00:03,  3.75s/image]
+1image [01:36, 96.55s/image]
+1image [01:36, 96.56s/image]
 
 
-SSS_S48R_20220727_1.jpg, 17/19, image read time 0.06 seconds, inference time 7.86 seconds....
-
-Combining predictions for 1 images:
-
-0image [00:00, ?image/s]
-1image [00:07,  7.84s/image]
-1image [00:07,  7.84s/image]
-
-
-SSS_S51_20220726_1.jpg, 18/19, image read time 0.20 seconds, inference time 15.00 seconds....
+SSS_S02_20220727_9.jpg, 16/19, image read time 0.27 seconds, inference time 112.03 seconds....
 
 Combining predictions for 1 images:
 
 0image [00:00, ?image/s]
-1image [00:05,  5.00s/image]
-1image [00:05,  5.00s/image]
-SSS_S55N_20220726_13.jpg, 19/19, image read time 0.23 seconds, inference time 14.23 seconds....
-20260430_YC_YRBCRBWAUSA total image read time: 14.55 seconds, total predict time: 629.51 seconds
+1image [00:03,  3.49s/image]
+1image [00:03,  3.49s/image]
 
-Total inference time for 13 folders: 743.09 seconds
+
+SSS_S48R_20220727_1.jpg, 17/19, image read time 0.06 seconds, inference time 7.65 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:07,  7.95s/image]
+1image [00:07,  7.95s/image]
+
+
+SSS_S51_20220726_1.jpg, 18/19, image read time 0.22 seconds, inference time 15.18 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:05,  5.01s/image]
+1image [00:05,  5.01s/image]
+SSS_S55N_20220726_13.jpg, 19/19, image read time 0.22 seconds, inference time 14.23 seconds....
+20260430_YC_YRBCRBWAUSA total image read time: 13.44 seconds, total predict time: 636.02 seconds
+
+Total inference time for 13 folders: 745.46 seconds
 
 
 
@@ -615,7 +615,6 @@ Executing Cell 12--------------------------------------
 20250916_DetertM2012_FieldValidateBaseGrain: BASEGRAIN2p2georef1775x1989.jpg (1/1)
 BASEGRAIN2p2georef1775x1989_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 
-
 ==================================================================================================================================
 20250916_MairD2024_FieldValidateMair2024K1: K1.jpg (1/1)
 K1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
@@ -624,7 +623,6 @@ K1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_APF2: DS8-S2_3.jpg (1/10)
 DS8-S2_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 DS8-S2_3_gsd.csv found, skipping grain sizing...
-
 20260430_MairD2026IG2_APF2: GU_bar7_0.jpg (2/10)
 GU_bar7_0_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 GU_bar7_0_gsd.csv found, skipping grain sizing...
@@ -638,24 +636,22 @@ L2_1_C1_DJI_0371_3_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_APF2: S9_5_C1_DJI_0102_2.jpg (5/10)
 S9_5_C1_DJI_0102_2_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 S9_5_C1_DJI_0102_2_gsd.csv found, skipping grain sizing...
-
 20260430_MairD2026IG2_APF2: S9_6_C1_DJI_0677_2.jpg (6/10)
 S9_6_C1_DJI_0677_2_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 S9_6_C1_DJI_0677_2_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_APF2: Simme_1633_2.jpg (7/10)
 Simme_1633_2_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 Simme_1633_2_gsd.csv found, skipping grain sizing...
-
 20260430_MairD2026IG2_APF2: deer_creek_004_0.jpg (8/10)
 deer_creek_004_0_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 deer_creek_004_0_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_APF2: hiddencreek_003_3.jpg (9/10)
 hiddencreek_003_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
 hiddencreek_003_3_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_APF2: kanakacreek_020_4.jpg (10/10)
 kanakacreek_020_4_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 kanakacreek_020_4_gsd.csv found, skipping grain sizing...
-
 
 ==================================================================================================================================
 20260430_MairD2026IG2_AR: DJI_0039_1_1.jpg (1/3)
@@ -663,24 +659,21 @@ DJI_0039_1_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 DJI_0039_1_1_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_AR: DJI_0536_1_4.jpg (2/3)
 DJI_0536_1_4_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 DJI_0536_1_4_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_AR: DSC_0577_1.jpg (3/3)
 DSC_0577_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 DSC_0577_1_gsd.csv found, skipping grain sizing...
 
 ==================================================================================================================================
-
 20260430_MairD2026IG2_FH2: 4_P1060348_3.jpg (1/1)
 4_P1060348_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 4_P1060348_3_gsd.csv found, skipping grain sizing...
 
-==================================================================================================================================
 
+==================================================================================================================================
 20260430_MairD2026IG2_HP: CREF_2_T1.jpg (1/1)
 CREF_2_T1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 CREF_2_T1_gsd.csv found, skipping grain sizing...
-
 
 ==================================================================================================================================
 20260430_MairD2026IG2_JF: T1_Q2_0__2.jpg (1/1)
@@ -688,14 +681,13 @@ T1_Q2_0__2_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 T1_Q2_0__2_gsd.csv found, skipping grain sizing...
 
 ==================================================================================================================================
-
 20260430_MairD2026IG2_NB2: P5220768_2_cut.jpg (1/7)
 P5220768_2_cut_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 P5220768_2_cut_gsd.csv found, skipping grain sizing...
+
 20260430_MairD2026IG2_NB2: P5220899_1.jpg (2/7)
 P5220899_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 P5220899_1_gsd.csv found, skipping grain sizing...
-
 20260430_MairD2026IG2_NB2: P5240929_Crop_3.jpg (3/7)
 P5240929_Crop_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 P5240929_Crop_3_gsd.csv found, skipping grain sizing...
@@ -704,15 +696,14 @@ P5240982_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 P5240982_1_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_NB2: P5251741_Crop2.jpg (5/7)
 P5251741_Crop2_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 P5251741_Crop2_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_NB2: P5252021_1.jpg (6/7)
 P5252021_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 P5252021_1_gsd.csv found, skipping grain sizing...
+
 20260430_MairD2026IG2_NB2: P5262238_1.jpg (7/7)
 P5262238_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 P5262238_1_gsd.csv found, skipping grain sizing...
-
 
 ==================================================================================================================================
 20260430_MairD2026IG2_NZ1: Outcrop_KRS_22_37_0_48_IMG_6617_cropped_5.jpg (1/2)
@@ -722,7 +713,6 @@ Outcrop_KRS_22_37_0_48_IMG_6617_cropped_5_gsd.csv found, skipping grain sizing..
 Outcrop_KRS_22_47_18_40_IMG_6628_cropped_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 Outcrop_KRS_22_47_18_40_IMG_6628_cropped_1_gsd.csv found, skipping grain sizing...
 
-
 ==================================================================================================================================
 20260430_MairD2026IG2_NZ2: Stream_sediment_HUR_22_1_20221209_092754_cropped_0_1.jpg (1/4)
 Stream_sediment_HUR_22_1_20221209_092754_cropped_0_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
@@ -730,7 +720,6 @@ Stream_sediment_HUR_22_1_20221209_092754_cropped_0_1_gsd.csv found, skipping gra
 20260430_MairD2026IG2_NZ2: Stream_sediment_HUR_22_1_20221209_092758_cropped_3__add1.jpg (2/4)
 Stream_sediment_HUR_22_1_20221209_092758_cropped_3__add1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 Stream_sediment_HUR_22_1_20221209_092758_cropped_3__add1_gsd.csv found, skipping grain sizing...
-
 20260430_MairD2026IG2_NZ2: Stream_sediment_HUR_22_1_20221209_092807_cropped_0_4.jpg (3/4)
 Stream_sediment_HUR_22_1_20221209_092807_cropped_0_4_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 Stream_sediment_HUR_22_1_20221209_092807_cropped_0_4_gsd.csv found, skipping grain sizing...
@@ -745,9 +734,7 @@ IMG_0167_0_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 IMG_0167_0_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_PR: IMG_0239_0.jpg (2/2)
 IMG_0239_0_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 IMG_0239_0_gsd.csv found, skipping grain sizing...
-
 
 ==================================================================================================================================
 20260430_MairD2026IG2_S12: S1_a_DJI_0003_2_0.jpg (1/4)
@@ -758,11 +745,11 @@ S1_g_DJI_0171_2_0_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 S1_g_DJI_0171_2_0_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_S12: S1_g_DJI_0171_2_3.jpg (3/4)
 S1_g_DJI_0171_2_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 S1_g_DJI_0171_2_3_gsd.csv found, skipping grain sizing...
 20260430_MairD2026IG2_S12: S1_g_DJI_0208_2_6.jpg (4/4)
 S1_g_DJI_0208_2_6_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 S1_g_DJI_0208_2_6_gsd.csv found, skipping grain sizing...
+
 
 ==================================================================================================================================
 
@@ -797,26 +784,23 @@ DJI_0113_4680_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 IMG_0830_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 20260430_YC_YRBCRBWAUSA: IMG_1389.JPG (11/19)
 IMG_1389_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 20260430_YC_YRBCRBWAUSA: IMG_3016_1.JPG (12/19)
 IMG_3016_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
 20260430_YC_YRBCRBWAUSA: IMG_3021_1.JPG (13/19)
 IMG_3021_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 20260430_YC_YRBCRBWAUSA: SSS_C21_20220727_16.jpg (14/19)
 SSS_C21_20220727_16_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 
 20260430_YC_YRBCRBWAUSA: SSS_S01_20220727_53.jpg (15/19)
 SSS_S01_20220727_53_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 20260430_YC_YRBCRBWAUSA: SSS_S02_20220727_9.jpg (16/19)
 SSS_S02_20220727_9_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 20260430_YC_YRBCRBWAUSA: SSS_S48R_20220727_1.jpg (17/19)
 SSS_S48R_20220727_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
 20260430_YC_YRBCRBWAUSA: SSS_S51_20220726_1.jpg (18/19)
 SSS_S51_20220726_1_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
-
 20260430_YC_YRBCRBWAUSA: SSS_S55N_20220726_13.jpg (19/19)
 SSS_S55N_20220726_13_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
 
@@ -827,7 +811,6 @@ Ending Cell 13-----------------------------------------
 Executing Cell 14--------------------------------------
 20250916_DetertM2012_FieldValidateBaseGrain: (1/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20250916_DetertM2012_FieldValidateBaseGrain/segments_ig2/20250916_DetertM2012_FieldValidateBaseGrain_summary_bootstrapping_ellipse.csv found, skipping...
-
 20250916_MairD2024_FieldValidateMair2024K1: (2/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20250916_MairD2024_FieldValidateMair2024K1/segments_ig2/20250916_MairD2024_FieldValidateMair2024K1_summary_bootstrapping_ellipse.csv found, skipping...
 20260430_MairD2026IG2_APF2: (3/13)
@@ -838,11 +821,9 @@ Executing Cell 14--------------------------------------
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_AR/segments_manual/20260430_MairD2026IG2_AR_summary_bootstrapping_ellipse.csv found, skipping...
 20260430_MairD2026IG2_FH2: (5/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_FH2/segments_ig2/20260430_MairD2026IG2_FH2_summary_bootstrapping_ellipse.csv found, skipping...
-
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_FH2/segments_manual/20260430_MairD2026IG2_FH2_summary_bootstrapping_ellipse.csv found, skipping...
 20260430_MairD2026IG2_HP: (6/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_HP/segments_ig2/20260430_MairD2026IG2_HP_summary_bootstrapping_ellipse.csv found, skipping...
-
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_HP/segments_manual/20260430_MairD2026IG2_HP_summary_bootstrapping_ellipse.csv found, skipping...
 20260430_MairD2026IG2_JF: (7/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_JF/segments_ig2/20260430_MairD2026IG2_JF_summary_bootstrapping_ellipse.csv found, skipping...
@@ -855,7 +836,6 @@ Executing Cell 14--------------------------------------
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_NZ1/segments_manual/20260430_MairD2026IG2_NZ1_summary_bootstrapping_ellipse.csv found, skipping...
 20260430_MairD2026IG2_NZ2: (10/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_NZ2/segments_ig2/20260430_MairD2026IG2_NZ2_summary_bootstrapping_ellipse.csv found, skipping...
-
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_NZ2/segments_manual/20260430_MairD2026IG2_NZ2_summary_bootstrapping_ellipse.csv found, skipping...
 20260430_MairD2026IG2_PR: (11/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_PR/segments_ig2/20260430_MairD2026IG2_PR_summary_bootstrapping_ellipse.csv found, skipping...
@@ -863,7 +843,6 @@ Executing Cell 14--------------------------------------
 20260430_MairD2026IG2_S12: (12/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_S12/segments_ig2/20260430_MairD2026IG2_S12_summary_bootstrapping_ellipse.csv found, skipping...
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_MairD2026IG2_S12/segments_manual/20260430_MairD2026IG2_S12_summary_bootstrapping_ellipse.csv found, skipping...
-
 20260430_YC_YRBCRBWAUSA: (13/13)
 /rcfs/projects/rcsfa/VisionAI/NvidiaH100_NoCut_12Filter_Run3/20260430_YC_YRBCRBWAUSA/segments_ig2/20260430_YC_YRBCRBWAUSA_summary_bootstrapping_ellipse.csv found, skipping...
 
@@ -906,7 +885,7 @@ D50 MAPE: 16.51%
 <Figure size 500x500 with 1 Axes>
 Ending Cell 16-----------------------------------------
 Executing Cell 17--------------------------------------
-Total time for prediction: 743.09 seconds
-Total time for full workflow: 769.64 seconds
+Total time for prediction: 745.46 seconds
+Total time for full workflow: 758.49 seconds
 
 Ending Cell 17-----------------------------------------

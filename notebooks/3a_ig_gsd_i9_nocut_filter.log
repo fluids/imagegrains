@@ -466,3 +466,48 @@ Combining predictions for 1 images:
 
 DJI_0113_1080.png, 3/19, image read time 0.65 seconds, inference time 1765.75 seconds....
 
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:18, 18.28s/image]
+1image [00:18, 18.28s/image]
+
+
+DJI_0113_1200.png, 4/19, image read time 0.67 seconds, inference time 2896.45 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:16, 16.04s/image]
+1image [00:16, 16.04s/image]
+
+
+DJI_0113_2160.png, 5/19, image read time 0.65 seconds, inference time 2571.29 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:55, 55.50s/image]
+1image [00:55, 55.51s/image]
+
+
+DJI_0113_3240.png, 6/19, image read time 0.68 seconds, inference time 1521.10 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:27, 27.19s/image]
+1image [00:27, 27.19s/image]
+
+
+DJI_0113_4200.png, 7/19, image read time 0.66 seconds, inference time 1939.81 seconds....
+
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:08,  8.56s/image]
+1image [00:08,  8.56s/image]
+
+
+DJI_0113_4440.png, 8/19, image read time 0.67 seconds, inference time 1776.95 seconds....
+
