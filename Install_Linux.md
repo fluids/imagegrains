@@ -1,67 +1,155 @@
-# Install Customized ImageGrains — Windows 11 · CPU
+# Install Customized ImageGrains — Linux · CPU
 
 This guide installs a [customized version](https://github.com/fluids/imagegrains) of [ImageGrains v2.0.1](https://github.com/dmair1989/imagegrains/tree/v2.0.1), adapted to support a new data structure for AI-based grain size benchmarking.
 
-## 1 · Install Anaconda and Git
+## Step 0 · Install Anaconda
 
-Skip this step if both are already installed.
+Skip this step if Anaconda is already installed and `conda --version` works.
 
-- Install [Anaconda for Windows](https://www.anaconda.com/download) using the default options.
-- Install [Git for Windows](https://git-scm.com/downloads/win) with command-line access enabled.
+1. Download the **Linux x86_64** shell installer from the [Anaconda download page](https://www.anaconda.com/download/success).
+2. Open Terminal and navigate to the download folder:
 
-Open **Anaconda PowerShell Prompt** from the Windows Start menu.
+```bash
+cd ~/Downloads
+bash Anaconda3-<version>-Linux-x86_64.sh
+```
 
-## 2 · Create and activate the environment
+Replace `Anaconda3-<version>-Linux-x86_64.sh` with the exact filename you downloaded.
 
-```powershell
-conda create --name imagegrains -c conda-forge python=3.10.18
+3. Follow the installation prompts. Accept shell initialization when prompted.
+4. Close and reopen Terminal.
+
+Use an installer compatible with your CPU architecture and Linux distribution.
+
+## Step 1 · Open Terminal and check Conda
+
+Open **Terminal**. On Ubuntu, you can press **Ctrl+Alt+T**.
+
+```bash
+conda --version
+```
+
+## Step 2 · Create and activate the environment
+
+```bash
+conda create --name imagegrains -c conda-forge python=3.10.18 git
 conda activate imagegrains
 ```
 
-Activate this environment whenever you open a new prompt to use ImageGrains.
+Activate this environment whenever you open a new terminal to use ImageGrains.
 
-## 3 · Download the source code
+## Step 3 · Download the source code
 
 Navigate to your preferred code folder, then clone the repository:
 
-```powershell
-cd "D:\Computation\Python\work\Mine\SFA"
+```bash
+mkdir -p ~/Computation/Python/work/Mine/SFA
+cd ~/Computation/Python/work/Mine/SFA
 git clone https://github.com/fluids/imagegrains.git
 cd imagegrains
 ```
 
 Replace the example path with your own. If already cloned, navigate to the existing `imagegrains` folder.
 
-## 4 · Install the packages
+## Step 4 · Install the packages
 
 Run these commands from the `imagegrains` folder:
 
-```powershell
+```bash
 python -m pip install --upgrade pip
+```
+
+Choose **one** PyTorch installation option.
+
+### Option A · CPU only
+
+```bash
 python -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cpu
+```
+
+### Option B · Ubuntu with NVIDIA GPU — CUDA 13.0
+
+Installs **PyTorch 2.11.0+cu130**:
+
+```bash
+python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu130
+```
+
+Requires a compatible NVIDIA GPU and driver supporting CUDA 13.0.
+
+### Option C · PNNL Marianas with NVIDIA GPU — CUDA 11.8
+
+Installs **PyTorch 2.7.1+cu118**:
+
+```bash
+python -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu118
+```
+
+Run GPU verification and demos within an allocated GPU compute session.
+
+### Install ImageGrains and notebook tools
+
+After installing your selected PyTorch version:
+
+```bash
 python -m pip install -e .
 python -m pip install notebook ipykernel papermill
 ```
 
-## 5 · Register the Jupyter kernel
+The `-e .` option installs the local source in editable mode.
 
-```powershell
+## Step 5 · Register the Jupyter kernel
+
+```bash
 python -m ipykernel install --user --name imagegrains --display-name "Python (imagegrains)"
 ```
 
-## 6 · Verify the installation
+## Step 6 · Verify the installation
 
-```powershell
+```bash
 python -m pip check
-python -c "import imagegrains, cellpose, torch; print('PyTorch:', torch.__version__); print('CUDA available:', torch.cuda.is_available())"
+python -c "import imagegrains, cellpose, torch; print('PyTorch:', torch.__version__); print('CUDA version:', torch.version.cuda); print('CUDA available:', torch.cuda.is_available()); print('Device:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')"
 ```
 
-Expected: no dependency conflicts and `CUDA available: False`.
+Expected results:
 
-## 7 · Run the demos
+| Installation | PyTorch | CUDA version | CUDA available |
+|---|---|---|---|
+| CPU only | 2.7.1+cpu | None | False |
+| Ubuntu GPU | 2.11.0+cu130 | 13.0 | True |
+| PNNL Marianas GPU | 2.7.1+cu118 | 11.8 | True |
 
-```powershell
+`python -m pip check` should report no dependency conflicts.
+
+For GPU installations, `CUDA available: True` requires a compatible GPU and driver visible to the current session. On Marianas, check this inside your allocated GPU compute session.
+
+## Step 7 · Run the demos
+
+### Local Ubuntu computer
+
+From the `imagegrains` folder:
+
+```bash
 jupyter notebook
 ```
 
-Open a demo in `notebooks`, select **Python (imagegrains)** as the kernel, and run the cells in order. Set `gpu=False` if the demo provides this option.
+Open a demo in `notebooks`, select **Python (imagegrains)** as the kernel, and run the cells in order.
+
+If the browser does not open automatically, copy the URL printed in Terminal into your browser.
+
+### PNNL Marianas
+
+Run a notebook with Papermill inside your allocated compute session:
+
+```bash
+papermill notebooks/your_demo.ipynb notebooks/your_demo_output.ipynb -k imagegrains
+```
+
+Replace the example notebook filenames with your own.
+
+### Select CPU or GPU
+
+If the demo provides a `gpu` option, use:
+
+- `gpu=False` for CPU execution.
+- `gpu=True` for GPU execution after confirming `CUDA available: True`.
