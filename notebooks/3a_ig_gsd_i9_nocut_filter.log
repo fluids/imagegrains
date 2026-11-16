@@ -511,3 +511,12 @@ Combining predictions for 1 images:
 
 DJI_0113_4440.png, 8/19, image read time 0.67 seconds, inference time 1776.95 seconds....
 
+Combining predictions for 1 images:
+
+0image [00:00, ?image/s]
+1image [00:11, 11.85s/image]
+1image [00:11, 11.85s/image]
+
+
+DJI_0113_4680.png, 9/19, image read time 0.62 seconds, inference time 1934.62 seconds....
+
