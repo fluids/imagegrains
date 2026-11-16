@@ -55,11 +55,3 @@ python -c "import imagegrains, cellpose, torch; print('PyTorch:', torch.__versio
 ```
 
 Expected: no dependency conflicts and `CUDA available: False`.
-
-## 7 · Run the demos
-
-```powershell
-jupyter notebook
-```
-
-Open a demo in `notebooks`, select **Python (imagegrains)** as the kernel, and run the cells in order. Set `gpu=False` if the demo provides this option.

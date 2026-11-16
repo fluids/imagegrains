@@ -1,10 +1,10 @@
-# Install Customized ImageGrains — Linux · CPU
+# Install Customized ImageGrains — Linux · (CPU and GPU)
 
 This guide installs a [customized version](https://github.com/fluids/imagegrains) of [ImageGrains v2.0.1](https://github.com/dmair1989/imagegrains/tree/v2.0.1), adapted to support a new data structure for AI-based grain size benchmarking.
 
 ## Step 0 · Install Anaconda
 
-Skip this step if Anaconda is already installed and `conda --version` works.
+Skip this step if Anaconda is already installed.
 
 1. Download the **Linux x86_64** shell installer from the [Anaconda download page](https://www.anaconda.com/download/success).
 2. Open Terminal and navigate to the download folder:
@@ -19,15 +19,9 @@ Replace `Anaconda3-<version>-Linux-x86_64.sh` with the exact filename you downlo
 3. Follow the installation prompts. Accept shell initialization when prompted.
 4. Close and reopen Terminal.
 
-Use an installer compatible with your CPU architecture and Linux distribution.
-
 ## Step 1 · Open Terminal and check Conda
 
 Open **Terminal**. On Ubuntu, you can press **Ctrl+Alt+T**.
-
-```bash
-conda --version
-```
 
 ## Step 2 · Create and activate the environment
 
@@ -35,8 +29,6 @@ conda --version
 conda create --name imagegrains -c conda-forge python=3.10.18 git
 conda activate imagegrains
 ```
-
-Activate this environment whenever you open a new terminal to use ImageGrains.
 
 ## Step 3 · Download the source code
 
@@ -111,45 +103,6 @@ python -m pip check
 python -c "import imagegrains, cellpose, torch; print('PyTorch:', torch.__version__); print('CUDA version:', torch.version.cuda); print('CUDA available:', torch.cuda.is_available()); print('Device:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')"
 ```
 
-Expected results:
-
-| Installation | PyTorch | CUDA version | CUDA available |
-|---|---|---|---|
-| CPU only | 2.7.1+cpu | None | False |
-| Ubuntu GPU | 2.11.0+cu130 | 13.0 | True |
-| PNNL Marianas GPU | 2.7.1+cu118 | 11.8 | True |
-
 `python -m pip check` should report no dependency conflicts.
 
 For GPU installations, `CUDA available: True` requires a compatible GPU and driver visible to the current session. On Marianas, check this inside your allocated GPU compute session.
-
-## Step 7 · Run the demos
-
-### Local Ubuntu computer
-
-From the `imagegrains` folder:
-
-```bash
-jupyter notebook
-```
-
-Open a demo in `notebooks`, select **Python (imagegrains)** as the kernel, and run the cells in order.
-
-If the browser does not open automatically, copy the URL printed in Terminal into your browser.
-
-### PNNL Marianas
-
-Run a notebook with Papermill inside your allocated compute session:
-
-```bash
-papermill notebooks/your_demo.ipynb notebooks/your_demo_output.ipynb -k imagegrains
-```
-
-Replace the example notebook filenames with your own.
-
-### Select CPU or GPU
-
-If the demo provides a `gpu` option, use:
-
-- `gpu=False` for CPU execution.
-- `gpu=True` for GPU execution after confirming `CUDA available: True`.
