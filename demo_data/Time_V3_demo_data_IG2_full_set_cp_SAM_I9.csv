@@ -1,0 +1,4 @@
+Name,Folder,Model_ID,Model_File,Width_pixel,Height_pixel,Imagereading_time_seconds,Predict_time_seconds,Preprocess_time_seconds,Inference_time_seconds,Postprocess_time_seconds,Total_time_seconds
+4_P1060348_3.jpg,FH,IG2_full_set_cp_SAM,IG2_full_set_cp_SAM,512,512,0.03406023979187012,31.751193284988403,-9999,-9999,-9999,-9999
+K1_C2_385.jpg,K1,IG2_full_set_cp_SAM,IG2_full_set_cp_SAM,1200,1350,0.10938453674316406,202.79635906219482,-9999,-9999,-9999,-9999
+K1_C3_0449.jpg,K1,IG2_full_set_cp_SAM,IG2_full_set_cp_SAM,1287,1267,0.10826611518859863,206.3048710823059,-9999,-9999,-9999,-9999

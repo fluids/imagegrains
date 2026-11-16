@@ -1,0 +1,78 @@
+Input Notebook:  0a_demo_data_h100.ipynb
+Output Notebook: 0a_demo_data_h100.executed.ipynb
+Executing notebook with kernel: imagegrains
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+All data paths to process:
+FH
+
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Loading model from /qfs/people/chen200/Computation/Python/work/Mine/SFA/imagegrains/models/IG2_full_set_cp_SAM
+
+Loading model in 2.26 seconds
+
+=== Model Information ===
+Model ID: IG2_full_set_cp_SAM
+GPU: True
+Total Parameters: 304,628,930
+Trainable Parameters: 304,592,064
+Model Size: 1162.07 MB
+
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+==================================================================================================================================
+Processing folder: FH
+
+4_P1060348_3.jpg, 1/1, image read time 0.00 seconds, inference time 0.85 seconds....
+FH total image read time: 0.00 seconds, total predict time: 0.85 seconds
+
+Total inference time for 1 folders: 0.88 seconds
+
+/tmp/ipykernel_4646/1224083610.py:120: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  sts_all = pd.concat([sts_all, sts_df], ignore_index=True)
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+==================================================================================================================================
+FH: 4_P1060348_3.jpg (1/1)
+4_P1060348_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
+
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+FH: (1/1)
+/qfs/people/chen200/Computation/Python/work/Mine/SFA/imagegrains/demo_data/FH/segments_ig2/FH_summary_bootstrapping_ellipse.csv found, skipping...
+
+  Folder          Type                                     Image/Masks  \
+0     FH  segments_ig2  4_P1060348_3_IG2_full_set_cp_SAM_combined_pred   
+
+   number of grains   D16 CI D16 (95%)   D50 CI D50 (95%)   D84 CI D84 (95%)  \
+0                88  15.4  [14.2 17.2]  22.1  [19.3 24.1]  37.3  [29.3 51. ]   
+
+    D96   CI D96 (95%) unit    axis         method grain approximation  
+0  68.0  [ 50.4 105.8]   px  b-axis  bootstrapping             ellipse  
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Total time for prediction: 0.88 seconds
+Total time for full workflow: 3.45 seconds
+
+Ending Cell 15-----------------------------------------
+[IPKernelApp] ERROR | KeyboardInterrupt caught in kernel.

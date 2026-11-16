@@ -1,0 +1,2 @@
+Name,Folder,Model_ID,Model_File,Width_pixel,Height_pixel,Imagereading_time_seconds,Predict_time_seconds,Preprocess_time_seconds,Inference_time_seconds,Postprocess_time_seconds,Total_time_seconds
+4_P1060348_3.jpg,FH,IG2_full_set_cp_SAM,IG2_full_set_cp_SAM,512,512,0.2062697410583496,7.3881659507751465,-9999,-9999,-9999,-9999

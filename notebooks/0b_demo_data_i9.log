@@ -1,0 +1,83 @@
+Input Notebook:  0b_demo_data_i9.ipynb
+Output Notebook: 0b_demo_data_i9.executed.ipynb
+Executing notebook with kernel: imagegrains
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+All data paths to process:
+FH
+
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Loading model from /home/chen200/Computation/Python/work/Mine/SFA/imagegrains/models/IG2_full_set_cp_SAM
+
+/home/chen200/Computation/Anaconda/anaconda3/envs/imagegrains/lib/python3.10/site-packages/torch/cuda/__init__.py:180: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12080). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+
+Loading model in 2.31 seconds
+
+=== Model Information ===
+Model ID: IG2_full_set_cp_SAM
+GPU: False
+Total Parameters: 304,628,930
+Trainable Parameters: 304,592,064
+Model Size: 1162.07 MB
+
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+==================================================================================================================================
+Processing folder: FH
+
+/home/chen200/Computation/Anaconda/anaconda3/envs/imagegrains/lib/python3.10/site-packages/cellpose/dynamics.py:524: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  coo = torch.sparse_coo_tensor(pt, torch.ones(pt.shape[1], device=pt.device, dtype=torch.int),
+
+4_P1060348_3.jpg, 1/1, image read time 0.00 seconds, inference time 23.96 seconds....
+FH total image read time: 0.00 seconds, total predict time: 23.96 seconds
+
+Total inference time for 1 folders: 23.97 seconds
+
+/tmp/ipykernel_490292/1224083610.py:120: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  sts_all = pd.concat([sts_all, sts_df], ignore_index=True)
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+==================================================================================================================================
+FH: 4_P1060348_3.jpg (1/1)
+4_P1060348_3_IG2_full_set_cp_SAM_gsd.csv found, skipping grain sizing...
+
+
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+FH: (1/1)
+/home/chen200/Computation/Python/work/Mine/SFA/imagegrains/demo_data/FH/segments_ig2/FH_summary_bootstrapping_ellipse.csv found, skipping...
+
+  Folder          Type                                     Image/Masks  \
+0     FH  segments_ig2  4_P1060348_3_IG2_full_set_cp_SAM_combined_pred   
+
+   number of grains   D16 CI D16 (95%)   D50 CI D50 (95%)   D84 CI D84 (95%)  \
+0                89  15.3  [13.2 16.2]  21.8  [19.2 24.1]  37.2  [31.9 50.2]   
+
+    D96   CI D96 (95%) unit    axis         method grain approximation  
+0  67.9  [ 48.7 105.8]   px  b-axis  bootstrapping             ellipse  
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Total time for prediction: 23.97 seconds
+Total time for full workflow: 26.55 seconds
+
+Ending Cell 15-----------------------------------------
