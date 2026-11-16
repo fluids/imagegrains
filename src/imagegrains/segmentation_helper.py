@@ -188,9 +188,7 @@ def predict_single_image(image_path, model,channels=[0,0], diameter=None,
                     else:
                         i_str=f',{key}={val}'
                     eval_str+=i_str
-                #exec(f'masks, flows, styles = model.eval(img, diameter=diameter,rescale=rescale,min_size=min_size,channels=channels, {eval_str})')
-                masks, flows, styles = model.eval(img, diameter=diameter,rescale=rescale,min_size=min_size,channels=channels, **config)
-                
+                exec(f'masks, flows, styles = model.eval(img, diameter=diameter,rescale=rescale,min_size=min_size,channels=channels, {eval_str})')
             except AttributeError:
                 print('Config file is not formatted correctly. Please check the documentation for more information.')
             except SyntaxError:
