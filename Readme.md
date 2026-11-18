@@ -1,4 +1,4 @@
-# Customized ImageGrains for AI-Based Grain Size Benchmarking
+# Customized ImageGrains for Grain Size Measurements Benchmark
 
 This customized version of [ImageGrains v2.0.1](https://github.com/dmair1989/imagegrains/tree/v2.0.1) supports AI-based grain size benchmarking. It uses the fine-tuned Cellpose-SAM model [IG2_full_set_cp_SAM](https://zenodo.org/records/15728186/files/IG2_full_set_cp_SAM) to segment sediment grains, calculate grain size distributions and uncertainty, and compare CPU and GPU processing times.
 
